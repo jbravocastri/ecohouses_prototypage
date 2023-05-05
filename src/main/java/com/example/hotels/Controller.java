@@ -13,7 +13,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
 
-import java.io.Console;
 import java.io.IOException;
 
 import java.net.URL;
@@ -72,11 +71,11 @@ public class Controller implements Initializable {
         private List<Hotel> Hotel_list(){
                 List<Hotel> ls = new ArrayList<>();
                 Hotel h = new Hotel();
-                h.setImageSource("img/hotel1.png");
+                h.setImageSource("images/hotel1.png");
                 ls.add(h);
 
                 h = new Hotel();
-                h.setImageSource("img/hotel1.png");
+                h.setImageSource("images/hotel1.png");
                 ls.add(h);
 
 
