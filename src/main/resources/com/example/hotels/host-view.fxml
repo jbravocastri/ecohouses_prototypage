@@ -1,90 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="white-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotels.Main">
-   <top>
-      <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="1315.0" styleClass=".white-background" stylesheets="@../css/styles.css" BorderPane.alignment="CENTER">
-         <children>
-            <Label prefHeight="13.0" prefWidth="222.0" text="3P" textFill="#0d0d0d">
-               <font>
-                  <Font name="DejaVu Sans ExtraLight" size="26.0" />
-               </font>
-            </Label>
-            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="472.0" stylesheets="@../css/styles.css">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.09787735849056604" layoutX="52.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="196.0" prefWidth="1248.0">
                <children>
-                  <TextField fx:id="text_search" alignment="TOP_LEFT" prefHeight="24.0" prefWidth="331.0" promptText="Search" stylesheets="@../css/styles.css">
-                     <styleClass>
-                        <String fx:value="transparent" />
-                        <String fx:value="round-layout" />
-                     </styleClass>
-                  </TextField>
-                  <ImageView fx:id="search_icon" fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../img/searchicon.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
-            <Pane prefHeight="75.0" prefWidth="317.0" styleClass="white-background" stylesheets="@../css/styles.css" />
-            <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="231.0">
-               <children>
-                  <Label />
-                  <ImageView fitHeight="40.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../img/default_avatar.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
-         </children>
-      </HBox>
-   </top>
-   <left>
-      <HBox prefHeight="815.0" prefWidth="1240.0" styleClass="white-background" stylesheets="@../css/styles.css" BorderPane.alignment="CENTER">
-         <children>
-            <Pane prefHeight="815.0" prefWidth="497.0" styleClass="white-background" stylesheets="@../css/styles.css" />
-            <ScrollPane prefHeight="815.0" prefWidth="835.0">
-               <content>
-                  <Pane prefHeight="335.0" prefWidth="590.0" stylesheets="@../css/styles.css">
+                  <HBox prefHeight="71.0" prefWidth="83.0">
                      <children>
-                        <ImageView fitHeight="257.0" fitWidth="376.0" layoutX="21.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" styleClass="round-layout">
-                           <image>
-                              <Image url="@../../../img/hotel1.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="98.0" fitWidth="125.0" layoutX="432.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../img/energy.png" />
-                           </image>
-                        </ImageView>
-                        <Button layoutX="471.0" layoutY="269.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Add" />
-                        <Label layoutX="174.0" layoutY="14.0" text="Hotel name" />
-                        <Label layoutX="480.0" layoutY="230.0" text="103 €/nuit" />
+                        <VBox prefHeight="71.0" prefWidth="61.0">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <VBox alignment="CENTER" prefHeight="71.0" prefWidth="83.0" />
                      </children>
-                     <padding>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </padding>
-                     <styleClass>
-                        <String fx:value="round-layout" />
-                        <String fx:value="white-background" />
-                     </styleClass>
-                  </Pane>
-               </content>
-            </ScrollPane>
-            <Pane prefHeight="815.0" prefWidth="636.0" styleClass="white-background" stylesheets="@../css/styles.css" />
-         </children>
-      </HBox>
-   </left>
-</BorderPane>
+                  </HBox>
+                  <ImageView fx:id="users" fitHeight="66.0" fitWidth="79.0" layoutX="1168.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/users.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="92.0" prefHeight="80.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="80.0" prefWidth="220.0" />
+                        <VBox prefHeight="80.0" prefWidth="220.0">
+                           <children>
+                              <DatePicker fx:id="checkin" prefHeight="27.0" prefWidth="211.0" promptText="Check in" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="220.0">
+                           <children>
+                              <DatePicker fx:id="checkout" prefHeight="27.0" prefWidth="211.0" promptText="Check out">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </DatePicker>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="220.0" />
+                        <VBox prefHeight="80.0" prefWidth="210.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" text="Search" textAlignment="JUSTIFY" textFill="#0a0000" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="770.0" prefWidth="1248.0">
+               <children>
+                  <SplitPane dividerPositions="0.22391653290529695" layoutX="62.0" layoutY="-19.0" prefHeight="781.0" prefWidth="1248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-19.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5" layoutY="67.0" orientation="VERTICAL" prefHeight="779.0" prefWidth="276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label layoutX="35.0" layoutY="40.0" text="My reservations">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <VBox layoutX="-1.0" layoutY="7.0" prefHeight="249.0" prefWidth="276.0">
+                                             <children>
+                                                <ImageView fitHeight="180.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/house2.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                           </children></AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="904.0">
+                           <children>
+                              <SplitPane dividerPositions="0.6725571725571725" layoutX="49.0" layoutY="51.0" prefHeight="779.0" prefWidth="964.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="602.0" />
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="374.0">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="14.0" prefHeight="762.0" prefWidth="312.0" vbarPolicy="ALWAYS">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="763.0" prefWidth="299.0">
+                                                   <children>
+                                                      <Label layoutX="43.0" layoutY="26.0" text="My selection">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children></AnchorPane>
+                                 </items>
+                              </SplitPane>
+                           </children></AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children></AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
