@@ -59,7 +59,7 @@
                         <VBox prefHeight="200.0" prefWidth="220.0" />
                         <VBox prefHeight="80.0" prefWidth="210.0">
                            <children>
-                              <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" text="Search" textAlignment="JUSTIFY" textFill="#0a0000" />
+                              <Button onAction="" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" text="Search" textAlignment="JUSTIFY" textFill="#0a0000" />
                            </children>
                         </VBox>
                      </children>
