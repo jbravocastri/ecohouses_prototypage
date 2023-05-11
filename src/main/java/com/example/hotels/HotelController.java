@@ -5,11 +5,20 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import com.example.hotels.model.Hotel;
+import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HotelController implements Initializable {
+        @FXML
+        private AnchorPane hotelParent;
+        public AnchorPane getParent(){
+                return hotelParent;
+        }
+
         @FXML
         private Label hotel_name;
 
@@ -23,11 +32,11 @@ public class HotelController implements Initializable {
         private ImageView image_hotel;
 
 
-        public void SetData(Hotel hotel ){
-                Image image = new Image(getClass().getResourceAsStream(hotel.getImageSource()));
+        public void setData(Hotel hotel ) throws IOException {
+                Image image = new Image(hotel.getImageSource());
                 image_hotel.setImage(image);
 
-                Image image2 = new Image(getClass().getResourceAsStream(hotel.getImageEnergySource()));
+                Image image2 = new Image(hotel.getImageEnergySource());
                 image_energy.setImage(image2);
 
                 hotel_price.setText(hotel.getPrice());

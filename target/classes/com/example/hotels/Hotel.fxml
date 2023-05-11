@@ -17,14 +17,14 @@
                <children>
                   <ImageView fx:id="image_hotel" fitHeight="212.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" styleClass="round-layout" HBox.hgrow="ALWAYS">
                      <image>
-                        <Image url="@../../../img/hotel1.png" />
+                        <Image url="@../../../images/hotel1.png" />
                      </image>
                   </ImageView>
                   <VBox alignment="TOP_CENTER" prefHeight="236.0" prefWidth="161.0" HBox.hgrow="ALWAYS">
                      <children>
                         <ImageView fx:id="image_energy" fitHeight="82.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../img/energy.png" />
+                              <Image url="@../../../images/energy.png" />
                            </image>
                         </ImageView>
                         <Pane prefHeight="122.0" prefWidth="183.0">

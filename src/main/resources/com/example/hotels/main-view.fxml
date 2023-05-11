@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotels.MainViewController">
    <children>
       <SplitPane dividerPositions="0.09787735849056604" layoutX="52.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>
@@ -60,6 +60,7 @@
                         <VBox prefHeight="80.0" prefWidth="210.0">
                            <children>
                               <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" text="Search" textAlignment="JUSTIFY" textFill="#0a0000" />
+                              <Button fx:id="logInHostButton" mnemonicParsing="false" onAction="#onLoginHostButton" text="Log in as host" />
                            </children>
                         </VBox>
                      </children>
@@ -103,7 +104,10 @@
                            <children>
                               <SplitPane dividerPositions="0.6725571725571725" layoutX="49.0" layoutY="51.0" prefHeight="779.0" prefWidth="964.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <items>
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="602.0" />
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="602.0">
+                                       <children>
+                                          <AnchorPane fx:id="hostMainContent" layoutY="14.0" prefHeight="762.0" prefWidth="644.0" />
+                                       </children></AnchorPane>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="374.0">
                                        <children>
                                           <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="14.0" prefHeight="762.0" prefWidth="312.0" vbarPolicy="ALWAYS">

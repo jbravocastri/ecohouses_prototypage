@@ -48,7 +48,7 @@ public class Controller implements Initializable {
                                 fxmlLoader.setLocation(getClass().getResource("Hotel.fxml"));
                                 VBox hotelbox = fxmlLoader.load();
                                 HotelController hotControler = fxmlLoader.getController();
-                                hotControler.SetData(h);
+                                hotControler.setData(h);
 
                                 if (column == 2) {
                                         column = 0;
