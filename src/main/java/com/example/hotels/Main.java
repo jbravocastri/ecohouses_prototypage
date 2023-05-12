@@ -21,8 +21,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1315, 890);
-        stage.setTitle("Hotels!");
+        Scene scene = new Scene(fxmlLoader.load(), 1250, 890);
+        stage.setTitle("Eco Houses to Rent");
         stage.setScene(scene);
         stage.show();
 

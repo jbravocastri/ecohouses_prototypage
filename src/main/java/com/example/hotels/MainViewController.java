@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import com.example.hotels.model.Hotel;
@@ -33,6 +34,7 @@ public class MainViewController implements Initializable {
             throw new IOException(e);
         }
     }
+
 }
 
 
