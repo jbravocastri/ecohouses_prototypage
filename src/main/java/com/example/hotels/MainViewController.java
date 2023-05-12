@@ -25,7 +25,7 @@ public class MainViewController implements Initializable {
     @FXML
     public AnchorPane hostMainContent;
 
-    //a ajouter loginbutton!
+    //a ajouter loginbutton actions
 
     public void onLoginHostButton(ActionEvent actionEvent) throws IOException {
         URL resourceToLoad = Main.class.getResource("host-hotel-list.fxml");

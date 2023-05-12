@@ -82,7 +82,7 @@
                                        <children>
                                           <VBox layoutX="-1.0" layoutY="7.0" prefHeight="379.0" prefWidth="276.0">
                                              <children>
-                                                <Text fill="#165106" strokeType="OUTSIDE" strokeWidth="0.0" text="Escape to a sustainable paradise and experience the beauty of nature firsthand in one of our eco-friendly houses for rent. Our ecological houses are designed with environmentally friendly materials and technologies, ensuring your stay has a minimal impact on the planet without sacrificing comfort or luxury." textAlignment="CENTER" wrappingWidth="244.7294921875">
+                                                <Text fill="#165106" strokeType="OUTSIDE" strokeWidth="0.0" text="Escape to a sustainable paradise and experience the beauty of nature firsthand in one of our eco-friendly houses for rent. Our ecological houses are designed with environmentally friendly materials and technologies, ensuring your stay has a minimal impact on the planet without sacrificing comfort or luxury!" textAlignment="CENTER" wrappingWidth="244.7294921875">
                                                    <VBox.margin>
                                                       <Insets left="15.0" top="40.0" />
                                                    </VBox.margin>

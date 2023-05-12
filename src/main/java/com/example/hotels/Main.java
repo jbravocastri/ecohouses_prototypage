@@ -22,7 +22,7 @@ public class Main extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1250, 890);
-        stage.setTitle("Welcome");
+        stage.setTitle("Welcome!");
         stage.setScene(scene);
         stage.show();
 
