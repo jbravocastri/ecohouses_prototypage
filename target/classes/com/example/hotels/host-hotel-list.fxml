@@ -6,6 +6,6 @@
 
 <AnchorPane fx:id="hotelParent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotels.HostHotelListController">
    <children>
-      <ListView fx:id="hotelList" prefHeight="728.0" prefWidth="709.0" />
+      <ListView fx:id="hostHotelList" prefHeight="728.0" prefWidth="709.0" />
    </children>
 </AnchorPane>

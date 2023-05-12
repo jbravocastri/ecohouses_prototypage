@@ -71,13 +71,18 @@ public class Controller implements Initializable {
         private List<Hotel> Hotel_list(){
                 List<Hotel> ls = new ArrayList<>();
                 Hotel h = new Hotel();
+                h.setName("Bali, Indonesia");
+                h.setPrice("$500");
+                h.setOwner("Jeremy");
                 h.setImageSource("images/hotel1.png");
                 ls.add(h);
 
                 h = new Hotel();
-                h.setImageSource("images/hotel1.png");
+                h.setName("Bali, Indonesia");
+                h.setPrice("$500");
+                h.setOwner("Stewart");
+                h.setImageSource("images/house2.png");
                 ls.add(h);
-
 
                 return ls;
         }

@@ -25,7 +25,7 @@
                            <children>
                               <ImageView fitHeight="71.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../images/logo.png" />
+                                    <Image url="@../../../images/logo-eco2.png" />
                                  </image>
                               </ImageView>
                            </children>
@@ -59,8 +59,8 @@
                         <VBox prefHeight="200.0" prefWidth="220.0" />
                         <VBox prefHeight="80.0" prefWidth="210.0">
                            <children>
-                              <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" text="Search" textAlignment="JUSTIFY" textFill="#0a0000" />
                               <Button fx:id="logInHostButton" mnemonicParsing="false" onAction="#onLoginHostButton" text="Log in as host" />
+                              <Button fx:id="logInUserButton" mnemonicParsing="false" onAction="#onLoginUserButton" text="Log in as user" />
                            </children>
                         </VBox>
                      </children>
@@ -107,7 +107,11 @@
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="602.0">
                                        <children>
                                           <AnchorPane fx:id="hostMainContent" layoutY="14.0" prefHeight="762.0" prefWidth="644.0" />
-                                       </children></AnchorPane>
+                                       </children>
+                                       <children>
+                                          <AnchorPane fx:id="userMainContent" layoutY="14.0" prefHeight="762.0" prefWidth="644.0" />
+                                       </children>
+                                    </AnchorPane>
                                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="374.0">
                                        <children>
                                           <ScrollPane hbarPolicy="NEVER" layoutX="-1.0" layoutY="14.0" prefHeight="762.0" prefWidth="312.0" vbarPolicy="ALWAYS">
