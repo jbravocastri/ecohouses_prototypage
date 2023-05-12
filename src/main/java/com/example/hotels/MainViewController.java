@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import com.example.hotels.model.Hotel;
@@ -29,6 +30,8 @@ public class MainViewController implements Initializable {
 
     @FXML
     public Button logInUserButton;
+
+    //a ajouter loginbutton actions max
 
     public void onLoginHostButton(ActionEvent actionEvent) throws IOException {
         URL resourceToLoad = Main.class.getResource("host-hotel-list.fxml");
