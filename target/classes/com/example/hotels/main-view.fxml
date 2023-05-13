@@ -99,12 +99,15 @@
                            </children></AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="904.0">
                            <children>
-                              <HBox fx:id="displayHotels" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" >
+                              <HBox fx:id="displayHotels" layoutY="14.0" prefHeight="751.0" prefWidth="964.0">
                                  <children>
-                                    <AnchorPane fx:id="hostMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" HBox.hgrow="ALWAYS"/>
+                                    <AnchorPane fx:id="hostMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" HBox.hgrow="ALWAYS" />
                                  </children>
                                  <children>
-                                    <AnchorPane fx:id="userMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" />
+                                    <AnchorPane fx:id="mainViewMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                                 <children>
+                                    <AnchorPane fx:id="userMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" HBox.hgrow="ALWAYS"/>
                                  </children>
                               </HBox>
                            </children></AnchorPane>
@@ -119,10 +122,13 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="163.0" layoutY="-62.0" stroke="#00000025" strokeType="INSIDE" width="1250.0" />
       <HBox layoutX="14.0" prefHeight="120.0" prefWidth="101.0">
          <children>
-            <ImageView fitHeight="96.0" fitWidth="101.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="96.0" fitWidth="150.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../images/logo.png" />
+                  <Image url="@../../../images/logo-eco2.png" />
                </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
             </ImageView>
          </children>
       </HBox>
@@ -140,7 +146,7 @@
       </HBox>
       <HBox layoutX="999.0" prefHeight="100.0" prefWidth="180.0">
          <children>
-            <MenuButton  fx:id="logInMenuButton" mnemonicParsing="false" text="Log in" textAlignment="CENTER" textFill="#1c6b0c">
+            <MenuButton fx:id="logInMenuButton" mnemonicParsing="false" text="Log in" textAlignment="CENTER" textFill="#1c6b0c">
               <items>
                 <MenuItem fx:id="logInGuestButton" mnemonicParsing="false" onAction="#onLoginGuestButton" text="Guest" />
                 <MenuItem fx:id="logInHostButton" mnemonicParsing="false" onAction="#onLoginHostButton" text="Host" />

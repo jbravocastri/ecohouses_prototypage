@@ -19,36 +19,58 @@ import java.util.ResourceBundle;
 
 public class MainViewController implements Initializable {
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
-
+    Node mainViewNode;
+    Node hostNode;
+    Node guestNode;
     @FXML
     MenuButton logInMenuButton;
     @FXML
     public AnchorPane hostMainContent;
     @FXML
     public AnchorPane userMainContent;
-
-    public void onLoginHostButton(ActionEvent actionEvent) throws IOException {
-        URL resourceToLoad = Main.class.getResource("host-hotel-list.fxml");
+    @FXML
+    public AnchorPane mainViewMainContent;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            Node nodeToLoad = FXMLLoader.load(resourceToLoad);
-            hostMainContent.getChildren().setAll(nodeToLoad);
+            displayHotelsOnInitialize();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void displayHotelsOnInitialize() throws IOException {
+        URL resourceToLoad = Main.class.getResource("main-view-hotel-list.fxml");
+        try {
+            mainViewNode = FXMLLoader.load(resourceToLoad);
+            hostMainContent.getChildren().setAll(mainViewNode);
         } catch (IOException e) {
             throw new IOException(e);
         }
 
-        logInMenuButton.setStyle("-fx-opacity: 0");
+    }
+
+    public void onLoginHostButton(ActionEvent actionEvent) throws IOException {
+        URL resourceToLoad = Main.class.getResource("host-hotel-list.fxml");
+        try {
+            hostNode = FXMLLoader.load(resourceToLoad);
+            userMainContent.getChildren().remove(guestNode);
+            userMainContent.getChildren().remove(mainViewNode);
+            hostMainContent.getChildren().setAll(hostNode);
+        } catch (IOException e) {
+            throw new IOException(e);
+        }
+
     }
 
     public void onLoginGuestButton(ActionEvent actionEvent) throws IOException {
 
         URL resourceToLoad = Main.class.getResource("user-hotel-list.fxml");
         try {
-            Node nodeToLoad = FXMLLoader.load(resourceToLoad);
-            userMainContent.getChildren().setAll(nodeToLoad);
+            guestNode = FXMLLoader.load(resourceToLoad);
+            hostMainContent.getChildren().remove(hostNode);
+            userMainContent.getChildren().remove(mainViewNode);
+            userMainContent.getChildren().setAll(guestNode);
         } catch (IOException e) {
             throw new IOException(e);
         }
