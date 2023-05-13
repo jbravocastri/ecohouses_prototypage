@@ -99,12 +99,14 @@
                            </children></AnchorPane>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="904.0">
                            <children>
-                              <SplitPane layoutX="49.0" layoutY="51.0" prefHeight="779.0" prefWidth="964.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <items>
-                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="777.0" prefWidth="602.0" />
-
-                                 </items>
-                              </SplitPane>
+                              <HBox fx:id="displayHotels" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" >
+                                 <children>
+                                    <AnchorPane fx:id="hostMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" HBox.hgrow="ALWAYS"/>
+                                 </children>
+                                 <children>
+                                    <AnchorPane fx:id="userMainContent" layoutY="14.0" prefHeight="751.0" prefWidth="964.0" />
+                                 </children>
+                              </HBox>
                            </children></AnchorPane>
                      </items>
                   </SplitPane>
@@ -138,9 +140,9 @@
       </HBox>
       <HBox layoutX="999.0" prefHeight="100.0" prefWidth="180.0">
          <children>
-            <MenuButton mnemonicParsing="false" text="Log in" textAlignment="CENTER" textFill="#1c6b0c">
+            <MenuButton  fx:id="logInMenuButton" mnemonicParsing="false" text="Log in" textAlignment="CENTER" textFill="#1c6b0c">
               <items>
-                <MenuItem fx:id="logInGuestButton" mnemonicParsing="false" text="Guest" />
+                <MenuItem fx:id="logInGuestButton" mnemonicParsing="false" onAction="#onLoginGuestButton" text="Guest" />
                 <MenuItem fx:id="logInHostButton" mnemonicParsing="false" onAction="#onLoginHostButton" text="Host" />
               </items>
                <font>

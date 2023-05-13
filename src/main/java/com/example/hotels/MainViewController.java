@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -24,14 +25,11 @@ public class MainViewController implements Initializable {
     }
 
     @FXML
+    MenuButton logInMenuButton;
+    @FXML
     public AnchorPane hostMainContent;
     @FXML
     public AnchorPane userMainContent;
-
-    @FXML
-    public Button logInUserButton;
-
-    //a ajouter loginbutton actions max
 
     public void onLoginHostButton(ActionEvent actionEvent) throws IOException {
         URL resourceToLoad = Main.class.getResource("host-hotel-list.fxml");
@@ -41,13 +39,11 @@ public class MainViewController implements Initializable {
         } catch (IOException e) {
             throw new IOException(e);
         }
+
+        logInMenuButton.setStyle("-fx-opacity: 0");
     }
 
-    public void onLoginUserButton(ActionEvent actionEvent) throws IOException {
-
-        //hide button
-        //String style=String.format("-fx-opacity:0;");
-        //logInUserButton.setStyle(style);
+    public void onLoginGuestButton(ActionEvent actionEvent) throws IOException {
 
         URL resourceToLoad = Main.class.getResource("user-hotel-list.fxml");
         try {
